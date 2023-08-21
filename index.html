@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="icon" type="image/x-icon" href="/img/logo.png" />
+        <title>Estoque Simples</title>
+    </head>
+
+    <body>
+        <h1>Estoque</h1>
+
+        <h3>Adicionar Produto</h3>
+        <form id="addProductForm">
+            <label>Nome: <input type="text" id="productName" /></label>
+            <label
+                >Quantidade: <input type="number" id="productQuantity"
+            /></label>
+            <label>Imagem: <input type="file" id="productImage" /></label>
+            <!-- Adicione isto -->
+            <button type="button">Adicionar</button>
+        </form>
+
+        <div id="message" style="color: green; margin-top: 10px"></div>
+
+        <h3>Consultar Produto</h3>
+        <form id="searchProductForm">
+            <label>Nome: <input type="text" id="searchProductName" /></label>
+            <button type="button">Buscar</button>
+        </form>
+
+        <h3>Produtos no Estoque</h3>
+        <table id="productsTable">
+            <thead>
+                <tr>
+                    <th>Imagem</th>
+                    <th>Nome</th>
+                    <th>Quantidade</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Os produtos serão inseridos aqui -->
+            </tbody>
+        </table>
+
+        <script src="/js/script.js"></script>
+         <input type="file" id="editProductImage" style="display: none" />
+    </body>
+</html>
